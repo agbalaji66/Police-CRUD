@@ -9,3 +9,5 @@ npm i express</br>
 npm i mongoose</br>
 npm i express-handlebars</br>
 npm i body-parser
+</br>
+To run the code use 'node server.js' Command 
