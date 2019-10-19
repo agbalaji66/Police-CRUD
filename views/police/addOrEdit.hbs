@@ -1,0 +1,27 @@
+<h3>{{viewTitle}}</h3>
+<form action="/police" method="POST" autocomplete="off">
+ <input type="hidden" name="_id" value="{{police._id}}">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" name="fullName" placeholder="Full Name"value="{{police.fullName}}">
+    </div>
+    <div class="form-group">
+        <label>Chrime</label>
+        <input type="text" class="form-control" name="chrime" placeholder="chrime" value="{{police.chrime}}">
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Station</label>
+            <input type="text" class="form-control" name="station" placeholder="station" value="{{police.station}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>City</label>
+            <input type="text" class="form-control" name="city" placeholder="City" value="{{police.city}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+   <a class="btn btn-secondary" href="/police/list"><i class="fa fa-list-alt"></i> View All</a> 
+    </div>
+</form>
